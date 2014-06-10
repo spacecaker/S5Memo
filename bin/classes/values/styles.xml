@@ -1,0 +1,71 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="SpaceTheme" parent="@style/Theme.Sherlock.Light" />
+    <style name="theme_default" parent="@style/SpaceTheme">
+        <item name="android:windowBackground">@drawable/tw_space_background</item>        
+        <item name="android:actionBarStyle">@style/theme_action_bar</item>
+        <item name="actionBarStyle">@style/theme_action_bar</item>
+        <item name="actionModeBackground">@drawable/tw_cab_background_top_holo_light</item>
+        <item name="android:actionModeBackground">@drawable/tw_cab_background_top_holo_light</item>
+        <item name="android:actionOverflowButtonStyle">@style/theme_action_overflow</item>
+        <item name="actionOverflowButtonStyle">@style/theme_action_overflow</item>
+        <item name="android:actionBarDivider">@drawable/memo_divider_ab</item>
+        <item name="actionBarDivider">@drawable/memo_divider_ab</item>
+        <item name="actionBarItemBackground">@drawable/memo_action_item_background</item>
+        <item name="android:actionBarItemBackground">@drawable/memo_action_item_background</item>
+    </style>
+    <style name="theme_action_bar" parent="Widget.Sherlock.Light.ActionBar">
+        <item name="android:icon">@drawable/memo_ic_ab_drawer</item>
+        <item name="icon">@drawable/memo_ic_ab_drawer</item>
+        <item name="background">@drawable/memo_ab_transparent</item>
+        <item name="android:background">@drawable/memo_ab_transparent</item>
+        <item name="titleTextStyle">@style/theme_action_bar_text_style</item>
+        <item name="android:titleTextStyle">@style/theme_action_bar_text_style</item>
+    </style>
+    <style name="theme_action_bar_text_style" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textSize">27.0dip</item>
+        <item name="android:textColor">#fff5f5f5</item>
+        <item name="android:shadowColor">#ff818181</item>
+    </style>
+    <style name="theme_action_overflow" parent="@*android:style/Widget.DeviceDefault.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/memo_ic_moreoverflow</item>
+    </style>
+        
+    <style name="TextAppearance.DeviceDefault.Widget.ActionBar.Title" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textSize">22.0dip</item>
+        <item name="android:textColor">#fff5f5f5</item>
+        <item name="android:shadowColor">#b2000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">0.3</item>
+    </style> 
+        
+	<style name="Space.Actin" parent="Widget.Sherlock.ActionBar">
+        <item name="background">@drawable/memo_ab_transparent</item>
+        <item name="android:background">@drawable/memo_ab_transparent</item>
+        <item name="backgroundStacked">@drawable/memo_ab_transparent</item>
+        <item name="android:backgroundStacked">@drawable/memo_ab_transparent</item>
+        <item name="backgroundSplit">@drawable/memo_ab_transparent</item>
+        <item name="android:backgroundSplit">@drawable/memo_ab_transparent</item>	    
+	</style>     
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+	<style name="fade_animation">
+		<item name="@android:windowEnterAnimation">@anim/popup_show</item>
+		<item name="@android:windowExitAnimation">@anim/popup_hide</item>
+	</style>
+</resources>
